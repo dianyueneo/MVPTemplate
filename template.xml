@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<template
+    format="5"
+    revision="1"
+    name="MVP全家桶(PresenterActivity)"
+    minApi="19"
+    minBuildApi="26"
+    description="一键创建 MVP Activity View Contract 页面所需要的全部组件">
+
+    <category value="Activity" />
+    <formfactor value="Mobile" />
+
+  
+    <parameter
+        id="pageName"
+        name="Activity Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="Main"
+        help="请填写页面名,如填写 Main,会自动生成 MainActivity, MainView, MainContract 等文件" />
+
+  
+
+    <parameter
+        id="ativityPackageName"
+        name="Ativity Package Name"
+        type="string"
+        constraints="nonempty"
+        suggest=".activity"
+        help="Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
+        />
+
+
+    <parameter
+        id="activityLayoutName"
+        name="Activity Layout Name"
+        type="string"
+        constraints="layout|unique|nonempty"
+        suggest="${activityToLayout(pageName)}"
+        default="activity_main"
+        help="Activity 创建之前需要填写 Activity 的布局名,若布局已创建就直接填写此布局名,若还没创建此布局,请勾选下面的单选框" />
+
+
+
+    <parameter
+        id="basePackageName"
+        name="Base MVP Package Name"
+        type="string"
+        constraints="package"
+        default="com.ren.realstuff.base.mvp"
+        help="请填写你的项目mvp基类包名,请认真核实此包名是否是正确的项目包名"
+        />
+
+
+    <parameter
+        id="packageName"
+        name="Root Package Name"
+        type="string"
+        constraints="package"
+        default="com.ren.realstuff"
+        help="请填写你的项目包名,请认真核实此包名是否是正确的项目包名,不能包含子包"
+        />
+
+
+    <!-- 128x128 thumbnails relative to template.xml -->
+    <thumbs>
+        <!-- default thumbnail is required -->
+        <thumb>template_blank_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>
