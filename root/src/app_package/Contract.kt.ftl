@@ -1,23 +1,15 @@
-package ${packageName}${presenterPackageName}
+package ${packageName}${ativityPackageName}
 
-import me.jessyan.art.di.component.AppComponent
-import me.jessyan.art.mvp.BasePresenter
-import me.jessyan.rxerrorhandler.core.RxErrorHandler
+import ${basePackageName}.IPresenter
+import ${basePackageName}.IView
 
-<#if modelName?has_content>
-import ${packageName}${modelPackageName}.${modelName}
-</#if>
+class ${pageName}Contract {
 
+    interface View : IView{
 
-class ${presenterName}(appComponent:AppComponent) :
-BasePresenter <#if modelName?has_content><${modelName}></#if>(<#if modelName?has_content>appComponent.repositoryManager().createRepository(${modelName}::class.java)<#else></#if>) {
-    private val mErrorHandler by lazy{
-        appComponent.rxErrorHandler()
     }
 
+    interface Biz : IPresenter{
 
-
-    override fun onDestroy() {
-        super.onDestroy()
     }
 }
