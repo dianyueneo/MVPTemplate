@@ -13,5 +13,7 @@ public class ${pageName}Activity extends BasePresenterActivity<${pageName}Contra
         return new ${pageName}View(this, this);
     }
 
+    ${srcOut}
+
     
 }

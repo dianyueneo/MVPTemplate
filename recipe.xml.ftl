@@ -9,7 +9,7 @@
 
     <instantiate from="root/res/layout/simple.xml.ftl"
                  to="${escapeXmlAttribute(resOut)}/layout/${activityLayoutName}.xml" />
-
+    <open file="${escapeXmlAttribute(resOut)}/layout/${activityLayoutName}.xml" />
 
 
     <instantiate from="root/src/app_package/Activity.${ktOrJavaExt}.ftl"
