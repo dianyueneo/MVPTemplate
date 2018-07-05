@@ -2,7 +2,7 @@ package ${packageName}
 
 import android.app.Activity
 import android.view.View
-import ${packageName}.R
+import ${applicationPackage}.R
 import ${basePackageName}.BaseView
 import butterknife.ButterKnife
 import butterknife.BindView
