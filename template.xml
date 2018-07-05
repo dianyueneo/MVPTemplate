@@ -19,16 +19,6 @@
         default="Main"
         help="请填写页面名,如填写 Main,会自动生成 MainActivity, MainView, MainContract 等文件" />
 
-  
-
-    <parameter
-        id="ativityPackageName"
-        name="Ativity Package Name"
-        type="string"
-        constraints="nonempty"
-        suggest=".activity"
-        help="Activity 将被输出到此包下,请认真核实此包名是否是你需要输出的目标包名 (基于 Root Package Name )"
-        />
 
 
     <parameter

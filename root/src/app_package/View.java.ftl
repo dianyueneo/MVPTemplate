@@ -1,8 +1,8 @@
-package ${packageName}${ativityPackageName};
+package ${packageName};
 
 import android.app.Activity;
 import android.view.View;
-import ${packageName}.R;
+import ${applicationPackage}.R;
 import ${basePackageName}.BaseView;
 import org.jetbrains.annotations.NotNull;
 import butterknife.ButterKnife;

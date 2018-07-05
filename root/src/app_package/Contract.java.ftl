@@ -1,4 +1,4 @@
-package ${packageName}${ativityPackageName};
+package ${packageName};
 
 import ${basePackageName}.IPresenter;
 import ${basePackageName}.IView;

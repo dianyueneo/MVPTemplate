@@ -1,4 +1,4 @@
-package ${packageName}${ativityPackageName};
+package ${packageName};
 
 import org.jetbrains.annotations.NotNull;
 import ${basePackageName}.BasePresenterActivity;
@@ -12,8 +12,5 @@ public class ${pageName}Activity extends BasePresenterActivity<${pageName}Contra
     protected ${pageName}Contract.View getView() {
         return new ${pageName}View(this, this);
     }
-
-    ${srcOut}
-
     
 }

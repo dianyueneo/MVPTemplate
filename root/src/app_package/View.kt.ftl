@@ -1,4 +1,4 @@
-package ${packageName}${ativityPackageName}
+package ${packageName}
 
 import android.app.Activity
 import android.view.View

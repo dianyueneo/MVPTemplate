@@ -13,19 +13,19 @@
 
 
     <instantiate from="root/src/app_package/Activity.${ktOrJavaExt}.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Activity.${ktOrJavaExt}" />
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Activity.${ktOrJavaExt}" />
+                   to="${escapeXmlAttribute(srcOut)}/${pageName}Activity.${ktOrJavaExt}" />
+    <open file="${escapeXmlAttribute(srcOut)}/${pageName}Activity.${ktOrJavaExt}" />
 
 
 
     <instantiate from="root/src/app_package/View.${ktOrJavaExt}.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}View.${ktOrJavaExt}" />
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}View.${ktOrJavaExt}" />
+                   to="${escapeXmlAttribute(srcOut)}/${pageName}View.${ktOrJavaExt}" />
+    <open file="${escapeXmlAttribute(srcOut)}/${pageName}View.${ktOrJavaExt}" />
 
 
     <instantiate from="root/src/app_package/Contract.${ktOrJavaExt}.ftl"
-                   to="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Contract.${ktOrJavaExt}" />
-    <open file="${escapeXmlAttribute(srcOut)}${slashedPackageName(ativityPackageName)}/${pageName}Contract.${ktOrJavaExt}" />
+                   to="${escapeXmlAttribute(srcOut)}/${pageName}Contract.${ktOrJavaExt}" />
+    <open file="${escapeXmlAttribute(srcOut)}/${pageName}Contract.${ktOrJavaExt}" />
 
 
 </recipe>
